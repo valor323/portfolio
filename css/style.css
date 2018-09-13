@@ -767,7 +767,7 @@ body {
 /* 4. Home
 ================================= */
 .home {
-  background: url("../images/work.jpg") center center no-repeat scroll;
+  background: url("../images/forest-header.jpeg") center center no-repeat scroll;
   background-size: cover;
 }
 .home .intro-section {
@@ -800,7 +800,7 @@ body {
 ================================= */
 /* 5.1 About Introduction */
 .aboutMe .kayo-intro-section {
-  background: url("../images/forest-header.jpeg") center center no-repeat fixed;
+  background: url("../images/header.jpg") center center no-repeat fixed;
   background-size: cover;
 }
 
