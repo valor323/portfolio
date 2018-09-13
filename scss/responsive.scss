@@ -1,0 +1,480 @@
+/* 14.1. Screen Width 992px */
+@media only screen and (max-width: 992px) {
+  .slide-menu-container {
+    left: -186px;
+  }
+  .control-bar {
+    .menu-toggle {
+      cursor: pointer;
+      padding: 8px;
+      display: block;
+      margin-top: 5px;
+      @include transition($time: 0.2s);
+      .chart {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+      .chart:nth-child(2) {
+        margin: 8px 0;
+      }
+    }
+  }
+  .main-page-content {
+    width: calc(100% - 95px);
+    margin-left: 70px;
+    margin-right: 25px;
+    position: relative;
+    left: 0;
+  }
+  .mobile-menu-active {
+    .menu-toggle .chart {
+      &:nth-child(2) {
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+      }
+      &:first-child {
+        -webkit-transform: translateY(10px) rotate(45deg);
+        -moz-transform: translateY(10px) rotate(45deg);
+        -ms-transform: translateY(10px) rotate(45deg);
+        -o-transform: translateY(10px) rotate(45deg);
+        transform: translateY(10px) rotate(45deg);
+      }
+      &:last-child {
+        -webkit-transform: translateY(-10px) rotate(-45deg);
+        -moz-transform: translateY(-10px) rotate(-45deg);
+        -ms-transform: translateY(-10px) rotate(-45deg);
+        -o-transform: translateY(-10px) rotate(-45deg);
+        transform: translateY(-10px) rotate(-45deg);
+      }
+    }
+    .slide-menu-container {
+      left: 44px;
+    }
+    .main-page-content {
+      transform: translateX(230px);
+    }
+  }
+  .portfolio {
+    .port-box {
+      .kayo-taps {
+        li {
+          margin-left: 20px;
+          padding: 23px 10px 17px;
+        }
+      }
+    }
+  }
+}
+
+/* 14.2. Screen Width 768px */
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-Y: visible;
+  }
+  .kayo-icon-box-container .kayo-icon-box .kayo-icon {
+    font-size: 35px;
+  }
+  .full-page {
+    min-height: 100vh;
+    height: auto;
+    &#home {
+      height: 100vh;
+    }
+  }
+  .slide-menu-container {
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+  .main-page-content {
+    width: calc(100% - 65px);
+    margin-left: 55px;
+    margin-right: 10px;
+    & > section {
+      padding: 10px 0;
+    }
+  }
+  .sakura-demo2 {
+    .main-page-content {
+      & > section,
+      & > div,
+      .overlay {
+        padding: 80px 0;
+        &.small-section {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+    .home {
+      .intro-section {
+        .mr-kayo {
+          font-size: 55px;
+          margin: 10px 0;
+        }
+        h3 {
+          font-size: 19px !important;
+        }
+      }
+    }
+    .home .overlay {
+      padding-top: 195px;
+      padding-bottom: 150px;
+    }
+  }
+  .kayo-container {
+    padding: 0 20px;
+  }
+  .section-intro {
+    .kayo-icon-box-container {
+      .kayo-icon-box {
+        width: 80px;
+        height: 80px;
+        .kayo-icon {
+          line-height: 80px;
+          font-size: 27px;
+        }
+        &:after {
+          left: calc(50% - 40px);
+          width: 80px;
+        }
+        &:before {
+          left: calc(50% - 40px);
+          width: 80px;
+        }
+      }
+    }
+    h1 {
+      font-size: 24px;
+      margin-top: 12px;
+    }
+  }
+  .mrkayo-main-title h2 {
+    font-size: 16px;
+  }
+  .mrkayo-main-title {
+    padding-bottom: 40px;
+  }
+  .kayo-icon-list-box {
+    .kayo-list-info p {
+      opacity: 1;
+      top: 0;
+    }
+  }
+  .home {
+    .intro-section {
+      .mr-kayo {
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin: 7px 0;
+      }
+      h3 {
+        font-size: 16px !important;
+      }
+    }
+  }
+
+
+
+  .aboutMe {
+    .kayo-intro-section .kayo-container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .kayo-service .kayo-container {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+    .my-clients-logo .kayo-container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .aboutMe .my-clients-logo .clients-slider {
+      margin: 0 -10px;
+    }
+    .my-clients-logo .client-logo {
+      margin: 0 10px;
+    }
+    .kayo-facts-about-me .kayo-container {
+      padding-top: 60px;
+      padding-bottom: 10px;
+    }
+  }
+  .my-information {
+    padding: 60px 0;
+    .kayo-info-detail {
+      padding-top: 15px;
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        line-height: 22px;
+        letter-spacing: 0.4px;
+        font-size: 13px;
+        margin-bottom: 0;
+      }
+    }
+    .my-image img {
+      margin: auto;
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+  .testimonials {
+    padding: 60px 0 50px;
+    .mrkayo-main-title {
+      padding-bottom: 30px;
+    }
+    .testi-user-info h3 {
+      font-size: 16px;
+    }
+    .testi-user-info h5 {
+      font-size: 12px;
+    }
+    .testi-desc-box {
+      &:before {
+        content: none;
+      }
+      i {
+        display: none;
+      }
+      p {
+        padding: 0;
+        font-size: 12px;
+        line-height: 22px;
+      }
+    }
+  }
+  .kayo-facts-about-me .kayo-info-list .single-info {
+    .info-icon {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    h3 {
+      font-size: 14px;
+    }
+  }
+
+  .portfolio {
+    .kayo-intro-section .kayo-container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .port-box {
+      .kayo-container {
+        padding-top: 60px;
+        padding-bottom: 30px;
+      }
+      .portfolio-items {
+        padding-top: 40px;
+      }
+      .kayo-taps {
+        li {
+          margin-left: 10px;
+          padding: 20px 5px;
+          border: 0;
+        }
+      }
+    }
+  }
+
+  .resume {
+    .kayo-intro-section .kayo-container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .kayo-container {
+      padding-top: 60px;
+      padding-bottom: 45px;
+    }
+  }
+  .education-workHistory {
+    .timeline-title {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+    }
+    .timeline-content .timeline-box {
+      .timeline-date {
+        font-size: 12px;
+      }
+      .timeline-info .timeline-info-header {
+        h3 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .kayo-skills {
+    .soft-skills .progress-container {
+      margin-bottom: 40px;
+      h3 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 15px;
+      }
+    }
+    .technical-skills .progress-bar-container h3 {
+      font-size: 14px;
+    }
+  }
+
+  .blog {
+    .kayo-container {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+    .normal-post .entry-header .post-share,
+    .normal-post .entry-header .post-category {
+      display: none;
+    }
+  }
+  .contact {
+    .kayo-intro-section .kayo-container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .kayo-container {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+    .contact-form .kayo-container {
+      padding-bottom: 60px;
+    }
+    .kayo-form {
+      .input-row {
+        .form-group {
+          width: 100%;
+          float: none;
+        }
+        &:first-child {
+          .form-group:first-child {
+            .form-control {
+              @include border-radius(15px 15px 0 0);
+            }
+          }
+          .form-group:last-child {
+            .form-control {
+              @include border-radius(0);
+            }
+          }
+        }
+      }
+    }
+  }
+  .kayo-icon-list-box .kayo-list-info {
+    h4 {
+      font-size: 15px;
+      margin: 20px 0 10px;
+    }
+    p {
+      font-size: 12px;
+      line-height: 22px;
+    }
+  }
+  .control-bar .copyright {
+    font-size: 14px;
+  }
+  /* navbar */
+  .appsLand-navbar {
+    .navbar-header {
+      margin: 0;
+    }
+    .sakura-demo2-menu-toggle {
+      display: block;
+    }
+    .app-links {
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      box-shadow: 5px 0 25px rgba(0,0,0,0.25);
+      background: rgba(0, 0, 0, 0.5);
+      .navbar-nav {
+        background: $darkBlueColor;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: -300px;
+        height: 100%;
+        width: 270px;
+        overflow: auto;
+        @include transition();
+        &  > li {
+          padding: 0;
+          border-top: 1px solid #3a4a5d;
+          border-bottom: 1px solid #22303e;
+          &.mobile-size-logo {
+            -webkit-box-shadow: 0 5px 15px  #1b2838;
+            -o-box-shadow: 0 5px 15px  #1b2838;
+            -moz-box-shadow: 0 5px 15px #1b2838;
+            box-shadow: 0 5px 15px  #1b2838;
+            z-index: 2;
+            padding: 25px 0;
+            a {
+              padding: 0;
+              display: inline-block;
+              &:hover {
+                background: none !important;
+              }
+            }
+          }
+          & > a,
+          & > span{
+            padding: 15px 30px;
+            &:hover {
+              background: $darkBlue2 !important;
+              color: $blueColor;
+            }
+            &:before {
+              content: none;
+            }
+          }
+          &.active {
+            & > a,
+            & > span{
+              color: $blueColor;
+              background: $darkBlue2 !important;
+            }
+          }
+          .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            border: 0;
+            width: 100%;
+            min-width: 0;
+            position: static !important;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    .navbar-brand img {
+      margin: 0;
+      height: 100%;
+    }
+    &.sakura-demo2-mobile-menu-active {
+      .app-links {
+        visibility: visible;
+        .navbar-nav {
+          left: 0;
+        }
+      }
+    }
+  }
+}
