@@ -296,6 +296,7 @@ body {
 .kayo-icon-box-container {
   padding: 20px;
   position: relative;
+  height: 65%;
 }
 .kayo-icon-box-container .kayo-icon-box {
   -webkit-transform: rotate(45deg);
@@ -848,6 +849,10 @@ body {
 }
 .kayo-service .kayo-icon-list-box {
   margin-bottom: 30px;
+}
+.skills{
+  position: relative;
+  height: 25vh;
 }
 
 /* 5.4 Client */
