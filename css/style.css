@@ -805,6 +805,14 @@ body {
   background-size: cover;
 }
 
+.img-orientation{
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 /* 5.2 My Information */
 .my-information {
   padding: 90px 0;
@@ -854,18 +862,14 @@ body {
   position: relative;
   height: 10vh;
   bottom: 12vh;
-}
-
-.CSS_skills{
-  position: relative;
-  height: 13vh;
-  bottom: 13vh;
+  margin-bottom: 2vh;
 }
 
 .skill_title{
   position: relative;
   bottom: 12vh;
 }
+
 
 /* 5.4 Client */
 .my-clients-logo .kayo-container {
@@ -1877,6 +1881,11 @@ body {
   -o-transition: all 0.2s ease-in-out 0s;
   -ms-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
+}
+
+.img-meerkat{
+  height: 39.5vh;
+  width: 100%;
 }
 
 /* 9. Contact
