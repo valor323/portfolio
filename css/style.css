@@ -870,6 +870,10 @@ body {
   bottom: 12vh;
 }
 
+.skill-container{
+  margin-bottom: 6vh;
+}
+
 
 /* 5.4 Client */
 .my-clients-logo .kayo-container {
