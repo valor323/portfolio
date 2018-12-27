@@ -21,8 +21,8 @@ $(function () {
         resumeSection = $('.resume'),
         scrollToTop = $(".scrollToTop"),
         navBar = $(".appsLand-navbar"),
-        softSkills = $('.soft-skills'),
-        technicalSkills = $(".technical-skills"),
+        // softSkills = $('.soft-skills'),
+        // technicalSkills = $(".technical-skills"),
 
         allProgress = [];
 
@@ -174,16 +174,16 @@ $(function () {
         }
     });
     // on mobile size
-    $(document,window).on('scroll', function () {
-        if (demo2Check || window.matchMedia('(max-width: 767px)').matches) {
-            var bodyScrollTop = $(document,window).scrollTop(),
-                softSkillsoffsetTop = softSkills.offset().top - ($(window).height() / 2);
-            if (!soft_progress_check && bodyScrollTop >= softSkillsoffsetTop) {
-                startProgress();
-                soft_progress_check = true;
-            }
-        }
-    });
+    // $(document,window).on('scroll', function () {
+    //     if (demo2Check || window.matchMedia('(max-width: 767px)').matches) {
+    //         var bodyScrollTop = $(document,window).scrollTop(),
+    //             softSkillsoffsetTop = softSkills.offset().top - ($(window).height() / 2);
+    //         if (!soft_progress_check && bodyScrollTop >= softSkillsoffsetTop) {
+    //             startProgress();
+    //             soft_progress_check = true;
+    //         }
+    //     }
+    // });
     /** END Soft Skills Progress */
 
     /** START Technical Skills Progress */
@@ -207,16 +207,16 @@ $(function () {
     });
 
     // on mobile size
-    $(document,window).on('scroll', function () {
-        if (demo2Check || window.matchMedia('(max-width: 767px)').matches) {
-            var bodyScrollTop = $(document,window).scrollTop(),
-                techoffsetTop = technicalSkills.offset().top - ($(window).height() / 2);
-            if (!technical_progress_check && bodyScrollTop >= techoffsetTop) {
-                skillsProgress();
-                technical_progress_check = true;
-            }
-        }
-    });
+    // $(document,window).on('scroll', function () {
+    //     if (demo2Check || window.matchMedia('(max-width: 767px)').matches) {
+    //         var bodyScrollTop = $(document,window).scrollTop(),
+    //             techoffsetTop = technicalSkills.offset().top - ($(window).height() / 2);
+    //         if (!technical_progress_check && bodyScrollTop >= techoffsetTop) {
+    //             skillsProgress();
+    //             technical_progress_check = true;
+    //         }
+    //     }
+    // });
     /** END Technical Skills Progress */
 
     /** START facts about me counter */
