@@ -63,6 +63,15 @@ a (standard):	#869cb1 (Gray blue)
 a (hover):	#FFF (White)
 a (active):	#FFF (White)
 ------------------------------------------------------------------*/
+
+.img-orientation{
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 .main-content-color-txt, .kayo-btn-1, .kayo-btn-1:hover, .kayo-btn-1:focus, .kayo-btn-1:active, .main-page-content > section, .control-bar, .slide-menu-container .slide-menu .kayo-user-info .social-media a, .slide-menu-container .slide-menu .kayo-user-info .kayo-links-toggle span, .slide-menu-container .slide-menu.kayo-menu-style-2 .kayo-links a:hover, .slide-menu-container .slide-menu.kayo-menu-style-2 .kayo-links li.active a, .kayo-facts-about-me .kayo-info-list .single-info .info-icon, .kayo-facts-about-me .kayo-info-list .single-info .info-icon i, .testimonials .testi-user-info h3, .testimonials .testi-desc-box i, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .port-show-info, .kayo-skills .soft-skills .progress-container .progress-val, .normal-post .entry-header .post-category a, .normal-post .entry-header .post-share li a, .normal-post .entry-header .post-share li span, .normal-post .entry-content .entry-post-info h4 a, .normal-post .entry-content .entry-expert .post-readMore a:hover, .normal-post .entry-footer .entry-tags a:hover, .contact-form .kayo-form .form-control {
   color: #FFFFFF;
 }
@@ -2534,7 +2543,7 @@ body {
   }
 
   .img-orientation{
-    -webkit-transform:rotate(90deg);
+    -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
@@ -2615,7 +2624,7 @@ body {
   }
 
   .img-orientation{
-    -webkit-transform:rotate(90deg);
+    -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
