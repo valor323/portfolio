@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
 
-    <title> Mr Kayo </title>
-    <link rel="icon" href="images/icon.png">
+    <title> Chase's Portfolio</title>
+    <script src="./js/sendphp.js"></script>
+    <link rel="icon" href="images/initials.png">
     <meta name="description" content="freelancer web developer and web designer
      my web development skills: HTMl5 -CSS3 - bootstrap - scss -javaScript - jQuery - fabric.js - angular.js - Ajax -PHP (MVC) - wordpress -Mysql ;; I look forward to working with you soon, and i will be in time">
     <meta name="keywords"
@@ -52,10 +53,10 @@
                 </li>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#history">History</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Portfolio</a></li>
+                <li><a href="#contact-ways">Contact</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -70,17 +71,12 @@
             <div class="container">
                 <div class="intro-section display-table">
                     <div class="display-table-cell">
-                        <h3 class="kayo-hello">HI, IAM</h3>
-                        <h1 class="mr-kayo">JOHN DOE</h1>
+                        <h3 class="kayo-hello">HI, I AM</h3>
+                        <h1 class="mr-kayo">Chase Caine</h1>
                         <h3 class="kayo-work-description">&nbsp;<span class="kayo-work"></span></h3>
                         <ul class="list-inline list-unstyled header-links">
-                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                                <a href="#" class="sakura-btn btn-inverse">
-                                    <i class="fa fa-rocket"></i> Hire Me
-                                </a>
-                            </li>
                             <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
-                                <a href="#" class="sakura-btn">
+                                <a href="Technical Resume.docx" class="sakura-btn">
                                     <i class="fa fa-download"></i>  My Resume
                                 </a>
                             </li>
@@ -102,16 +98,14 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="my-image">
-                        <img src="images/11.jpg" class="img-responsive" alt="">
+                        <img src="./images/chaseProfile-pic.JPG" class="img-responsive" alt="">
                     </div>
                 </div>
                 <div class="col-sm-8">
                     <div class="kayo-info-detail">
                         <h3>HELLO,</h3>
                         <p>
-                            I’m Saad Tarek. I designed this site so you can get to know me on a personal
-                            level. My career as a UX Designer, my portfolio, my personal photography, my
-                            blog, my favorite quotes, and so much more. So please sit back and enjoy!
+                            My name is Chase Caine and I am a web developer. I graduated from LearningFuze with over 1000 hours of programming experience recently and am excited about what the future may hold. My experience is with Javascript, CSS, HTML, React, and JQuery. If we look back a ways to when I attended Chapman University straight out of high school you will see that my path for the future back then was quite different. I was a Film Production Major and was excited by sound design in films. However my path took a turn and I needed a new one. I have found my future and that future is web development and I couldn’t  be more excited about it. 
                         </p>
                     </div>
                 </div>
@@ -122,78 +116,218 @@
 
     <!-- Start My Service
     ===================================-->
-    <div class="kayo-service bg-img">
+    <div class="kayo-service bg-img" id="skills">
         <div class="overlay">
             <div class="container mb_-30px">
-                <div class="mrkayo-main-title">
+                <div class="mrkayo-main-title skill_title">
                     <h2>
-                        Service
+                        Skills
                         <span class="kayo-line"></span>
                     </h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
                         <div class="kayo-icon-list-box">
                             <div class="kayo-icon-box-container">
-                                <div class="kayo-icon-box">
-                                    <span class="pe-7s-monitor kayo-icon"></span>
-                                </div>
+                                <!-- <div class="kayo-icon-box"> -->
+                                        <img class="kayo-icon skills" src="./images/javascript.png" alt="">
+                                    <!-- <span class="pe-7s-monitor kayo-icon"></span> -->
+                                <!-- </div> -->
                             </div>
-                            <div class="kayo-list-info">
-                                <h4>Web Design</h4>
+                            <!-- <div>
+                                <h4>Javascript</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor.
                                 </p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
                         <div class="kayo-icon-list-box">
                             <div class="kayo-icon-box-container">
-                                <div class="kayo-icon-box">
+                                <img src="./images/react-logo.png" alt="" class="kayo-icon skills">
+                                <!-- <div class="kayo-icon-box">
                                     <span class="pe-7s-phone kayo-icon"></span>
-                                </div>
+                                </div> -->
                             </div>
-                            <div class="kayo-list-info">
+                            <!-- <div class="kayo-list-info">
                                 <h4>Responsive UI</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor.
                                 </p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
                         <div class="kayo-icon-list-box">
                             <div class="kayo-icon-box-container">
-                                <div class="kayo-icon-box">
+                                    <img src="./images/HTML5_Badge_128.png" alt="" class="kayo-icon skills">
+                                <!-- <div class="kayo-icon-box">
                                     <span class="pe-7s-server kayo-icon"></span>
-                                </div>
+                                </div> -->
                             </div>
-                            <div class="kayo-list-info">
+                            <!-- <div class="kayo-list-info">
                                 <h4>DB Design</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor.
                                 </p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
                         <div class="kayo-icon-list-box">
                             <div class="kayo-icon-box-container">
-                                <div class="kayo-icon-box">
+                                    <img src="./images/icons8-css3.svg" alt="" class="kayo-icon skills">
+                                <!-- <div class="kayo-icon-box">
                                     <span class="pe-7s-camera kayo-icon"></span>
-                                </div>
+                                </div> -->
                             </div>
-                            <div class="kayo-list-info">
+                            <!-- <div class="kayo-list-info">
                                 <h4>photography</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor.
                                 </p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                    <img src="./images/bootstrap-4.svg" alt="" class="kayo-icon skills">
+                                <!-- <div class="kayo-icon-box">
+                                    <span class="pe-7s-camera kayo-icon"></span>
+                                </div> -->
                             </div>
+                            <!-- <div class="kayo-list-info">
+                                <h4>photography</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor.
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                    <img src="./images/redux.svg" alt="" class="kayo-icon skills">
+                                <!-- <div class="kayo-icon-box">
+                                    <span class="pe-7s-camera kayo-icon"></span>
+                                </div> -->
+                            </div>
+                            <!-- <div class="kayo-list-info">
+                                <h4>photography</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor.
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                    <img src="./images/git.png" alt="" class="kayo-icon skills skill-margin">
+                                <!-- <div class="kayo-icon-box">
+                                    <span class="pe-7s-camera kayo-icon"></span>
+                                </div> -->
+                            </div>
+                            <!-- <div class="kayo-list-info"> -->
+                                <!-- <h4>photography</h4> -->
+                                <!-- <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor.
+                                </p> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                    <img src="./images/github.png" alt="" class="kayo-icon skills skill-margin">
+                                <!-- <div class="kayo-icon-box">
+                                    <span class="pe-7s-camera kayo-icon"></span>
+                                </div> -->
+                            </div>
+                            <!-- <div class="kayo-list-info">
+                                <h4>photography</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor.
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                    <img src="./images/materializecss.png" alt="" class="kayo-icon skills skill-margin">
+                                <!-- <div class="kayo-icon-box">
+                                    <span class="pe-7s-camera kayo-icon"></span>
+                                </div> -->
+                            </div>
+                            <!-- <div class="kayo-list-info">
+                                <h4>photography</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor.
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                    <img src="./images/node.png" alt="" class="kayo-icon skills skill-margin">
+                                <!-- <div class="kayo-icon-box">
+                                    <span class="pe-7s-camera kayo-icon"></span>
+                                </div> -->
+                            </div>
+                            <!-- <div class="kayo-list-info">
+                                <h4>photography</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor.
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                    <img src="./images/php.png" alt="" class="kayo-icon skills skill-margin">
+                                <!-- <div class="kayo-icon-box">
+                                    <span class="pe-7s-camera kayo-icon"></span>
+                                </div> -->
+                            </div>
+                            <!-- <div class="kayo-list-info">
+                                <h4>photography</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor.
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 skill-container">
+                        <div class="kayo-icon-list-box">
+                            <div class="kayo-icon-box-container">
+                                    <img src="./images/ajax.png" alt="" class="kayo-icon skills skill-margin">
+                                <!-- <div class="kayo-icon-box">
+                                    <span class="pe-7s-camera kayo-icon"></span>
+                                </div> -->
+                            </div>
+                            <!-- <div class="kayo-list-info">
+                                <h4>photography</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor.
+                                </p>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -221,38 +355,32 @@
                         <div class="timeline-content">
                             <div class="timeline-box">
                                 <div class="timeline-date">
-                                    1990 - 1994
+                                    2018-2018
                                 </div>
                                 <div class="timeline-info">
                                     <div class="timeline-info-header">
-                                        <h3>Harvard University</h3>
-                                        <p>B.A. and M.S., Computer Science</p>
+                                        <h3>LearningFuze</h3>
+                                        <p>Accelerated Web Development Program</p>
                                     </div>
                                     <div class="timeline-info-details">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi
-                                            earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum
-                                            totam voluptas voluptates. Excepturi fugiat nobis reprehenderit sequi
-                                            veniam!
+                                            LearningFuze is an accelerated web development program where I learned HTML, CSS, Javascript, JQuery, React, Redux, Bootstrap, PHP, Node.js, Ajax, Materialize, and Git. 
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="timeline-box">
                                 <div class="timeline-date">
-                                    2015 - 2016
+                                    2009-2012
                                 </div>
                                 <div class="timeline-info">
                                     <div class="timeline-info-header">
-                                        <h3>Helwan University</h3>
-                                        <p>Bachelor Degree</p>
+                                        <h3>Chapman University</h3>
+                                        <p>Partial Degree</p>
                                     </div>
                                     <div class="timeline-info-details">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi
-                                            earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum
-                                            totam voluptas voluptates. Excepturi fugiat nobis reprehenderit sequi
-                                            veniam!
+                                            I was a Film Production Major at Chapman University straight out of highschool where i learned cinematography, directing, editing, and sound design. Doing so gave me knowledge with Avid, Final Cut Pro, Pro Tools, and Adobe Suites.
                                         </p>
                                     </div>
                                 </div>
@@ -268,38 +396,32 @@
                         <div class="timeline-content">
                             <div class="timeline-box">
                                 <div class="timeline-date">
-                                    2007 - 2016
+                                    2013-2015
                                 </div>
                                 <div class="timeline-info">
                                     <div class="timeline-info-header">
-                                        <h3>Facebook</h3>
-                                        <p>UX/UI Designer</p>
+                                        <h3>ChannelFireball</h3>
+                                        <p>Inventory</p>
                                     </div>
                                     <div class="timeline-info-details">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi
-                                            earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum
-                                            totam voluptas voluptates. Excepturi fugiat nobis reprehenderit sequi
-                                            veniam!
+                                           Channel Fireball is the biggest retailer of trading card games on the west coast and I was involved in receiving shipments, unboxing, organizing, and product quality inspection. 
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="timeline-box">
                                 <div class="timeline-date">
-                                    2017
+                                    2015-2018
                                 </div>
                                 <div class="timeline-info">
                                     <div class="timeline-info-header">
-                                        <h3>Envato</h3>
-                                        <p>UX/UI Designer</p>
+                                        <h3>Barnes & Noble</h3>
+                                        <p>Bookseller</p>
                                     </div>
                                     <div class="timeline-info-details">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut commodi
-                                            earum eligendi ipsum, laborum maiores mollitia, optio quam quis rerum
-                                            totam voluptas voluptates. Excepturi fugiat nobis reprehenderit sequi
-                                            veniam!
+                                            My time at Barnes & Noble was spent doing sales, inventory, cashiering, and recieving. I was trained in everthing the store had to offer, so I took on many responsibilities as such. 
                                         </p>
                                     </div>
                                 </div>
@@ -308,406 +430,73 @@
                     </div>
                 </div>
             </div>
-            <div class="take-my-resume">
+
+            <!-- <div class="take-my-resume">
                 <a href="#" class="kayo-btn-1"><span class="glyphicon glyphicon-cloud-download"></span> Take My Resume</a>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- End Resume ==================-->
 
-    <!-- Start Skills
-    ===================================-->
-    <div class="kayo-skills bg-img">
-        <div class="overlay">
-            <div class="container">
-                <div class="soft-skills">
-                    <div class="mrkayo-main-title">
-                        <h2>
-                            Soft Skills
-                            <span class="kayo-line"></span>
-                        </h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="progress-container">
-                                <div class="progressName" id="pro1" data-value="0.8" data-color="#1894ff"></div>
-                                <h3>Communication</h3>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="progress-container">
-                                <div class="progressName" id="pro2" data-value="0.5" data-color="#1894ff"></div>
-                                <h3>Work In Team</h3>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="progress-container">
-                                <div class="progressName" id="pro4" data-value="0.6" data-color="#1894ff"></div>
-                                <h3>Speed</h3>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="progress-container">
-                                <div class="progressName" id="pro3" data-value="0.7" data-color="#1894ff"></div>
-                                <h3>creativity</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="technical-skills">
-                    <div class="mrkayo-main-title">
-                        <h2>
-                            Technical Skills
-                            <span class="kayo-line"></span>
-                        </h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="progress-bar-container primary-style">
-                                <span class="timer" data-from="0" data-to="95" data-speed="1100"
-                                      data-refresh-interval="50">0</span>
-                                <div class="progress">
-                                    <div class="progress-bar active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
-                                </div>
-                                <h3>HTML5</h3>
-                            </div>
-                            <div class="progress-bar-container primary-style">
-                                <span class="timer" data-from="0" data-to="70" data-speed="1100"
-                                      data-refresh-interval="50">0</span>
-                                <div class="progress">
-                                    <div class="progress-bar active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
-                                </div>
-                                <h3>JavaScript</h3>
-                            </div>
-                        </div> <!-- end the col -->
-                        <div class="col-sm-6">
-                            <div class="progress-bar-container primary-style">
-                                <span class="timer" data-from="0" data-to="90" data-speed="1100"
-                                      data-refresh-interval="50">0</span>
-                                <div class="progress">
-                                    <div class="progress-bar active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
-                                </div>
-                                <h3>jQuery</h3>
-                            </div>
-                            <div class="progress-bar-container primary-style">
-                                <span class="timer" data-from="0" data-to="80" data-speed="1100"
-                                      data-refresh-interval="50">0</span>
-                                <div class="progress">
-                                    <div class="progress-bar active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
-                                </div>
-                                <h3>CSS3</h3>
-                            </div>
-                        </div> <!-- end the col -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Skills ==================-->
-
-    <!-- Start portfolio
-    ===================================-->
-    <section id="portfolio">
-        <div class="portfolio">
-            <div class="port-box">
-                <div class="container">
-                    <div class="mrkayo-main-title">
-                        <h2>
-                            My Work
-                            <span class="kayo-line"></span>
-                        </h2>
-                    </div>
-                    <div class="text-center">
-                        <ul class="portfolio-sorting list-unstyled text-center kayo-taps">
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".front-end">Front End</li>
-                            <li data-filter=".back-end">Back End</li>
-                            <li data-filter=".graphic-design">Graphic Design</li>
-                        </ul> <!--end portfolio sorting -->
-                    </div>
-                    <div class="portfolio-items">
-                        <div class="row grid">
-                            <div class="col-md-4 col-sm-6 grid-item front-end">
-                                <div class="portfolio-item">
-                                    <div class="port-data">
-                                        <div class="port-data-front-card"><i class="fa fa-codepen"></i></div>
-                                        <div class="port-data-back-card">
-                                            <h4 class="project-name">Project Name</h4>
-                                            <a href="#" target="_blank" class="port-show-info glyphicon glyphicon-lin glyphicon glyphicon-linkglyphicon glyphicon-linkglyphicon glyphicon-linkglyphicon glyphicon-linkglyphicon glyphicon-link"></a>
-                                            <div class="project-category">
-                                                <h5>Front End <i class="fa fa-codepen pull-right"></i></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="port-image">
-                                        <img src="images/work/01.jpg" class="img-responsive" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 grid-item back-end">
-                                <div class="portfolio-item">
-                                    <div class="port-data">
-                                        <div class="port-data-front-card"><i class="fa fa-code"></i></div>
-                                        <div class="port-data-back-card">
-                                            <h4 class="project-name">Project Name</h4>
-                                            <a href="#" target="_blank" class="port-show-info glyphicon glyphicon-link"></a>
-                                            <div class="project-category">
-                                                <h5>Back End <i class="fa fa-code pull-right"></i></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="port-image">
-                                        <img src="images/work/02.jpg" class="img-responsive" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 grid-item graphic-design">
-                                <div class="portfolio-item">
-                                    <div class="port-data">
-                                        <div class="port-data-front-card"><i class="fa fa-paint-brush"></i></div>
-                                        <div class="port-data-back-card">
-                                            <h4 class="project-name">Project Name</h4>
-                                            <a href="#" target="_blank" class="port-show-info glyphicon glyphicon-link"></a>
-                                            <div class="project-category">
-                                                <h5>Graphic Design <i class="fa fa-paint-brush pull-right"></i></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="port-image">
-                                        <img src="images/work/03.jpg" class="img-responsive" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 grid-item front-end">
-                                <div class="portfolio-item">
-                                    <div class="port-data">
-                                        <div class="port-data-front-card"><i class="fa fa-codepen"></i></div>
-                                        <div class="port-data-back-card">
-                                            <h4 class="project-name">Project Name</h4>
-                                            <a href="#" target="_blank" class="port-show-info glyphicon glyphicon-link"></a>
-                                            <div class="project-category">
-                                                <h5>Front End <i class="fa fa-codepen pull-right"></i></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="port-image">
-                                        <img src="images/work/04.jpg" class="img-responsive" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 grid-item back-end">
-                                <div class="portfolio-item">
-                                    <div class="port-data">
-                                        <div class="port-data-front-card"><i class="fa fa-code"></i></div>
-                                        <div class="port-data-back-card">
-                                            <h4 class="project-name">Project Name</h4>
-                                            <a href="#" target="_blank" class="port-show-info glyphicon glyphicon-link"></a>
-                                            <div class="project-category">
-                                                <h5>Back End <i class="fa fa-code pull-right"></i></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="port-image">
-                                        <img src="images/work/05.jpg" class="img-responsive" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 grid-item graphic-design">
-                                <div class="portfolio-item">
-                                    <div class="port-data">
-                                        <div class="port-data-front-card">
-                                            <div><i class="fa fa-paint-brush"></i></div>
-                                        </div>
-                                        <div class="port-data-back-card">
-                                            <h4 class="project-name">Project Name</h4>
-                                            <a href="#" target="_blank" class="port-show-info glyphicon glyphicon-link"></a>
-                                            <div class="project-category">
-                                                <h5>Graphic Design <i class="fa fa-paint-brush pull-right"></i></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="port-image">
-                                        <img src="images/work/06.png" class="img-responsive" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!--end row -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End portfolio ================-->
-
     <!-- Start Facts About Me
     ===================================-->
     <div class="kayo-facts-about-me bg-img">
-        <div class="overlay">
-            <div class="container mb_-50px">
-                <div class="mrkayo-main-title">
-                    <h2>
-                        Awesome Facts
-                        <span class="kayo-line"></span>
-                    </h2>
-                </div>
-                <div class="kayo-info-list">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="single-info">
-                                <p class="info-icon">
-                                    <i class="pe-7s-display1"></i>
-                                    <span class="facts-numbers" data-from="20" data-to="500" data-speed="1100"></span>
-                                </p>
-                                <h3> PROJECTS </h3>
+            <div class="overlay">
+                <div class="container mb_-50px">
+                    <div class="mrkayo-main-title">
+                        <h2>
+                            Awesome Facts
+                            <span class="kayo-line"></span>
+                        </h2>
+                    </div>
+                    <div class="kayo-info-list">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="single-info">
+                                    <p class="info-icon">
+                                        <i class="pe-7s-display1"></i>
+                                        <span class="facts-numbers" data-from="20" data-to="500" data-speed="1100"></span>
+                                    </p>
+                                    <h3> 8 Projects Done </h3>
+                                    <p> </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="single-info">
-                                <p class="info-icon">
-                                    <i class="pe-7s-alarm"></i>
-                                    <span class="facts-numbers" data-from="70" data-to="750" data-speed="1100"></span>
-                                </p>
-                                <h3> Work Hours </h3>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="single-info">
+                                    <p class="info-icon">
+                                        <i class="pe-7s-alarm"></i>
+                                        <span class="facts-numbers" data-from="70" data-to="750" data-speed="1100"></span>
+                                    </p>
+                                    <h3> 1000+ Work Hours </h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="single-info">
-                                <p class="info-icon">
-                                    <i class="pe-7s-headphones"></i>
-                                    <span class="facts-numbers" data-from="30" data-to="150" data-speed="1100"></span>
-                                </p>
-                                <h3> Customer SUPPORT </h3>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="single-info">
+                                    <p class="info-icon">
+                                        <i class="pe-7s-headphones"></i>
+                                        <span class="facts-numbers" data-from="30" data-to="150" data-speed="1100"></span>
+                                    </p>
+                                    <h3> 2 Hackathons! </h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="single-info">
-                                <p class="info-icon">
-                                    <i class="pe-7s-smile"></i>
-                                    <span class="facts-numbers" data-from="100" data-to="820" data-speed="1100"></span>
-                                </p>
-                                <h3> Happy Clients </h3>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="single-info">
+                                    <p class="info-icon">
+                                        <i class="pe-7s-smile"></i>
+                                        <span class="facts-numbers" data-from="100" data-to="820" data-speed="1100"></span>
+                                    </p>
+                                    <h3> Little Sleep! </h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Facts About Me ================-->
+        <!-- End Facts About Me ================-->
 
-    <!-- Start Testimonials -->
-    <div class="testimonials">
-        <div class="container">
-            <div class="mrkayo-main-title">
-                <h2>
-                    Testimonials
-                    <span class="kayo-line"></span>
-                </h2>
-            </div>
-            <div class="testimonials-slider-container">
-                <!-- Testimonials Slider -->
-                <div class="testimonials-slider">
-                    <!-- Testimonials Slider Box -->
-                    <div class="testi-box text-center">
-                        <div class="img-box">
-                            <img src="images/users/01.jpg" alt="">
-                        </div>
-                        <div class="testi-user-info">
-                            <h3>Saad Tarek</h3>
-                            <h5>Designer at Upwork</h5>
-                        </div>
-                        <div class="testi-desc-box">
-                            <i>“</i>
-                            <p>
-                                Praesent et purus ac libero euismod egestas. Aliquam feugiat luctus eros eget
-                                maecenas
-                                semper pulvinar. tiam in auctor tortor. Aliquam vulputate risus placerat congue
-                                ornare.
-                                Donec semper odio non efficitur congue.
-                            </p>
-                            <i>”</i>
-                        </div>
-                    </div>
-                    <!-- Testimonials Slider Box -->
-                    <div class="testi-box text-center">
-                        <div class="img-box">
-                            <img src="images/users/02.jpg" alt="">
-                        </div>
-                        <div class="testi-user-info">
-                            <h3>Amanda Catmull</h3>
-                            <h5>Designer at ProGlyphs</h5>
-                        </div>
-                        <div class="testi-desc-box">
-                            <i>“</i>
-                            <p>
-                                Praesent et purus ac libero euismod egestas. Aliquam feugiat luctus eros eget
-                                maecenas
-                                semper pulvinar. tiam in auctor tortor. Aliquam vulputate risus placerat congue
-                                ornare.
-                                Donec semper odio non efficitur congue.
-                            </p>
-                            <i>”</i>
-                        </div>
-                    </div>
-                    <!-- Testimonials Slider Box -->
-                    <div class="testi-box text-center">
-                        <div class="img-box">
-                            <img src="images/users/03.jpg" alt="">
-                        </div>
-                        <div class="testi-user-info">
-                            <h3>Bill Fox</h3>
-                            <h5>Designer at Amanidax</h5>
-                        </div>
-                        <div class="testi-desc-box">
-                            <i>“</i>
-                            <p>
-                                Praesent et purus ac libero euismod egestas. Aliquam feugiat luctus eros eget
-                                maecenas
-                                semper pulvinar. tiam in auctor tortor. Aliquam vulputate risus placerat congue
-                                ornare.
-                                Donec semper odio non efficitur congue.
-                            </p>
-                            <i>”</i>
-                        </div>
-                    </div>
-                    <!-- Testimonials Slider Box -->
-                    <div class="testi-box text-center">
-                        <div class="img-box">
-                            <img src="images/users/04.jpg" alt="">
-                        </div>
-                        <div class="testi-user-info">
-                            <h3>Joey Higgins</h3>
-                            <h5>CEO Higgins&Geox</h5>
-                        </div>
-                        <div class="testi-desc-box">
-                            <i>“</i>
-                            <p>
-                                Praesent et purus ac libero euismod egestas. Aliquam feugiat luctus eros eget
-                                maecenas
-                                semper pulvinar. tiam in auctor tortor. Aliquam vulputate risus placerat congue
-                                ornare.
-                                Donec semper odio non efficitur congue.
-                            </p>
-                            <i>”</i>
-                        </div>
-                    </div>
-                </div>
-                <!-- Silder Paging -->
-                <ul class="paging-container list-unstyled text-center list-inline">
-                    <li class="testimonials-arrows" id="testimonial-prevArrow">
-                        <div class="testimonials-client-page"></div>
-                        <i class="pe-7s-angle-left"></i>
-                    </li>
-                    <li id="testimonial-paging"></li>
-                    <li class="testimonials-arrows" id="testimonial-nextArrow">
-                        <div class="testimonials-client-page"></div>
-                        <i class="pe-7s-angle-right"></i>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- End Testimonials ================-->
+    
+
 
     <!-- Start Blog
     ===================================-->
@@ -717,7 +506,7 @@
                 <div class="container">
                     <div class="mrkayo-main-title">
                         <h2>
-                            Last Posts
+                            Portfolio
                             <span class="kayo-line"></span>
                         </h2>
                     </div>
@@ -728,180 +517,81 @@
                                     <article class="normal-post">
                                         <figure class="entry-header">
                                             <div class="post-image">
-                                                <img src="images/blog/01.jpg" class="img-responsive" alt="">
+                                                <img src="./images/squirrel-receipts.png" class="img-responsive img-meerkat" alt="">
                                             </div>
-                                            <ul class="post-category list-unstyled">
-                                                <li><a href="#">creative</a></li>
-                                                <li><a href="#">Front end</a></li>
-                                                <li><a href="#">web design</a></li>
-                                            </ul>
-                                            <ul class="post-share list-unstyled">
-                                                <li class="open-post-share">
-                                                    <span><i class="fa fa-share-alt"></i></span>
-                                                    <ul class="post-share-links list-unstyled">
-                                                        <li>
-                                                            <a href="#" class="facebook-bg-hover">
-                                                                <i class="fa fa-facebook"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="twitter-bg-hover">
-                                                                <i class="fa fa-twitter"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="google-plus-bg-hover">
-                                                                <i class="fa fa-google-plus"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                         
                                         </figure>
                                         <div class="entry-content">
                                             <div class="entry-post-info">
-                                                <h4><a href="#">Normal Post Style</a></h4>
-                                                <p>Posted 6 Dec</p>
+                                                <h4><a href="http://squirrelreceipts.com/" target="_blank">Squirrel Receipts</a></h4>
                                             </div>
                                             <div class="entry-expert">
                                                 <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur distinctio dolorum ea facilis non repellendus velit voluptas voluptates? Accusantium at doloribus eum iste iusto, nam rem repudiandae voluptates. Inventore.
+                                                    Squirell Receipts is a web application where you can enter and store your receipts in one convienient location. You can Create, Read, Edit, and Update your receipts with our easy to use interface.
                                                 </p>
-                                                <div class="post-readMore">
+                                                <!-- <div class="post-readMore">
                                                     <a href="#" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a>
                                                     <span class="pull-right"><a href="#">1 COMMENT</a></span>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="entry-footer">
                                             <ul class="entry-tags list-unstyled list-inline">
-                                                <li><a href="#">CSS</a></li>
-                                                <li><a href="#">HTML</a></li>
-                                                <li><a href="#">WORDPRESS</a></li>
+                                                <li><a href="https://github.com/shan777/c718_receipt_tracker" target="_blank">Github</a></li>
+                                                <li><a href="http://squirrelreceipts.com/" target="_blank">Live</a></li>
+                                                <!-- <li><a href="#">React</a></li> -->
                                             </ul>
                                         </div>
                                     </article>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 post-grid-item">
-                                <div>
-                                    <article class="normal-post">
-                                        <figure class="entry-header">
-                                            <ul class="post-share list-unstyled">
-                                                <li class="open-post-share">
-                                                    <span><i class="fa fa-share-alt"></i></span>
-                                                    <ul class="post-share-links list-unstyled">
-                                                        <li>
-                                                            <a href="#" class="facebook-bg-hover">
-                                                                <i class="fa fa-facebook"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="twitter-bg-hover">
-                                                                <i class="fa fa-twitter"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="google-plus-bg-hover">
-                                                                <i class="fa fa-google-plus"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </figure>
-                                        <div class="entry-content">
-                                            <div class="entry-post-info">
-                                                <h4><a href="#">Normal Post Style</a></h4>
-                                                <p>
-                                                    Posted 3 Nov
-                                                </p>
-                                            </div>
-                                            <div class="entry-expert">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur distinctio dolorum ea facilis non repellendus velit voluptas voluptates? Accusantium at doloribus eum iste iusto, nam rem repudiandae voluptates. Inventore.
-                                                </p>
-                                                <div class="post-readMore">
-                                                    <a href="#" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a>
-                                                    <span class="pull-right"><a href="#">1 COMMENT</a></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="entry-footer">
-                                            <ul class="entry-tags list-unstyled list-inline">
-                                                <li><a href="#">CSS</a></li>
-                                                <li><a href="#">HTML</a></li>
-                                                <li><a href="#">WORDPRESS</a></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
+                           
                             <div class="col-md-6 col-sm-6 post-grid-item">
                                 <div>
                                     <article class="normal-post">
                                         <figure class="entry-header">
                                             <div class="post-image">
-                                                <img src="images/blog/02.jpg" class="img-responsive" alt="">
+                                                <img src="./images/movie-meerkat-3.png" class="img-responsive img-meerkat" alt="">
                                             </div>
-                                            <ul class="post-category list-unstyled">
-                                                <li><a href="#">creative</a></li>
-                                                <li><a href="#">Front end</a></li>
-                                                <li><a href="#">web design</a></li>
-                                            </ul>
-                                            <ul class="post-share list-unstyled">
-                                                <li class="open-post-share">
-                                                    <span><i class="fa fa-share-alt"></i></span>
-                                                    <ul class="post-share-links list-unstyled">
-                                                        <li>
-                                                            <a href="#" class="facebook-bg-hover">
-                                                                <i class="fa fa-facebook"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="twitter-bg-hover">
-                                                                <i class="fa fa-twitter"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" class="google-plus-bg-hover">
-                                                                <i class="fa fa-google-plus"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
                                         </figure>
                                         <div class="entry-content">
                                             <div class="entry-post-info">
-                                                <h4><a href="#">Normal Post Style</a></h4>
-                                                <p>Posted 12 Oct</p>
+                                                <h4><a href="https://3daddict.github.io/movie-meerkat-app/" target="_blank">Movie Meerkat</a></h4>
+                                                <!-- <p>Posted 12 Oct</p> -->
                                             </div>
                                             <div class="entry-expert">
                                                 <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur distinctio dolorum ea facilis non repellendus velit voluptas voluptates? Accusantium at doloribus eum iste iusto, nam rem repudiandae voluptates. Inventore.
+                                                    Movie Meerkat is a web application where you can see the latest movies and when you click on them it takes you to a more in depth look at it which includes a trailer, review, rating, and a map with local theaters.
+
                                                 </p>
-                                                <div class="post-readMore">
+                                                <!-- <div class="post-readMore">
                                                     <a href="#" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a>
                                                     <span class="pull-right"><a href="#">1 COMMENT</a></span>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="entry-footer">
                                             <ul class="entry-tags list-unstyled list-inline">
-                                                <li><a href="#">CSS</a></li>
-                                                <li><a href="#">HTML</a></li>
-                                                <li><a href="#">WORDPRESS</a></li>
+                                                <li><a href="https://github.com/3daddict/movie-meerkat-app" target="_blank">Github</a></li>
+                                                <li><a href="https://3daddict.github.io/movie-meerkat-app/" target="_blank">Live</a></li>
                                             </ul>
                                         </div>
                                     </article>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6 post-grid-item">
+                            <div class="col-md-6 col-sm-6 col-sm-offset-3 post-grid-item">
                                 <div>
                                     <article class="normal-post">
                                         <figure class="entry-header">
-                                            <ul class="post-share list-unstyled">
+                                            <div class="post-image">
+                                                <img src="./images/gladiator-2.png" class="img-responsive img-meerkat" alt="">
+                                            </div>
+                                            <!-- <ul class="post-category list-unstyled">
+                                                <li><a href="#">creative</a></li>
+                                                <li><a href="#">Front end</a></li>
+                                                <li><a href="#">web design</a></li>
+                                            </ul> -->
+                                            <!-- <ul class="post-share list-unstyled">
                                                 <li class="open-post-share">
                                                     <span><i class="fa fa-share-alt"></i></span>
                                                     <ul class="post-share-links list-unstyled">
@@ -922,35 +612,34 @@
                                                         </li>
                                                     </ul>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </figure>
                                         <div class="entry-content">
                                             <div class="entry-post-info">
-                                                <h4><a href="#">Normal Post Style</a></h4>
-                                                <p>
-                                                    Posted 18 Aug
-                                                </p>
+                                                <h4><a href="https://valor323.github.io/memory_match/" target="_blank">Gladiator Memory Match</a></h4>
+                                                <!-- <p>Posted 12 Oct</p> -->
                                             </div>
                                             <div class="entry-expert">
                                                 <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur distinctio dolorum ea facilis non repellendus velit voluptas voluptates? Accusantium at doloribus eum iste iusto, nam rem repudiandae voluptates. Inventore.
+                                                    Gladiator Memory Match is a game where you have to match characters from the award winning movie Gladiator. The game will show your attempts vs your matches and give you an accuracy rating.
+
                                                 </p>
-                                                <div class="post-readMore">
+                                                <!-- <div class="post-readMore">
                                                     <a href="#" class="pull-left read-more-link">Read More <i class="fa fa-long-arrow-right"></i></a>
                                                     <span class="pull-right"><a href="#">1 COMMENT</a></span>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                         <div class="entry-footer">
                                             <ul class="entry-tags list-unstyled list-inline">
-                                                <li><a href="#">CSS</a></li>
-                                                <li><a href="#">HTML</a></li>
-                                                <li><a href="#">WORDPRESS</a></li>
+                                                <li><a href="https://github.com/valor323/memory_match" target="_blank">Github</a></li>
+                                                <li><a href="https://valor323.github.io/memory_match/" target="_blank">Live</a></li>
                                             </ul>
                                         </div>
                                     </article>
                                 </div>
                             </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -961,7 +650,7 @@
 
     <!-- Start Contact Ways
     ===================================-->
-    <div class="contact-ways">
+    <div id="contact-ways" class="contact-ways">
         <div class="container mb_-30px">
             <div class="mrkayo-main-title">
                 <h2>
@@ -980,7 +669,7 @@
                         <div class="kayo-list-info">
                             <h4>Location</h4>
                             <p>
-                                Los Angeles, USA
+                                Irvine CA, USA
                             </p>
                         </div>
                     </div>
@@ -995,7 +684,7 @@
                         <div class="kayo-list-info">
                             <h4>Phone</h4>
                             <p>
-                                +123 654 78900
+                                949 395 5517
                             </p>
                         </div>
                     </div>
@@ -1010,7 +699,7 @@
                         <div class="kayo-list-info">
                             <h4>Email</h4>
                             <p>
-                                kayo@example.com
+                                caine101@mail.chapman.edu
                             </p>
                         </div>
                     </div>
@@ -1020,106 +709,7 @@
     </div>
     <!-- End Contact Ways ================-->
 
-    <!-- Start Contact From
-    ===================================-->
-    <div class="contact-form bg-img" id="contact">
-        <div class="overlay">
-            <div class="container">
-                <div class="mrkayo-main-title">
-                    <h2>
-                        Send Message
-                        <span class="kayo-line"></span>
-                    </h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1">
-                        <form class="kayo-form" action="php/sendMessage.php" method="post" id="contact_form">
-                            <div class="input-row">
-                                <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="Message About .." name="messageAbout" data-messageAboutValidation>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="Your Full Name" name="full_name" data-nameValidation>
-                                </div>
-                            </div>
-                            <div class="input-row">
-                                <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="E-mail" name="email" data-emailValidation>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="text" placeholder="phone" name="phone" data-phoneValidation>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message .." name="message" data-messageValidation></textarea>
-                            </div>
-                            <div>
-                                <button class="btn kayo-btn-1 btn-block btn-rgba" type="submit" name="submit_contact_form">
-                                    <i class="fa fa-send-o"></i> Send Your Message
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Start Contact From -->
 
-    <!-- Start Client Logo
-    ===================================-->
-    <div class="my-clients-logo small-section">
-        <div class="container">
-            <div class="sakura-demo2-clients-slider">
-                <div class="client-logo">
-                    <a href="#" target="_blank">
-                        <img src="images/clients-logo/logo-1.png" alt="">
-                    </a>
-                </div>
-                <div class="client-logo">
-                    <a href="#" target="_blank">
-                        <img src="images/clients-logo/logo-2.png" alt="">
-                    </a>
-                </div>
-                <div class="client-logo">
-                    <a href="#" target="_blank">
-                        <img src="images/clients-logo/logo-3.png" alt="">
-                    </a>
-                </div>
-                <div class="client-logo">
-                    <a href="#" target="_blank">
-                        <img src="images/clients-logo/logo-4.png" alt="">
-                    </a>
-                </div>
-                <div class="client-logo">
-                    <a href="#" target="_blank">
-                        <img src="images/clients-logo/logo-5.png" alt="">
-                    </a>
-                </div>
-                <div class="client-logo">
-                    <a href="#" target="_blank">
-                        <img src="images/clients-logo/logo-6.png" alt="">
-                    </a>
-                </div>
-                <div class="client-logo">
-                    <a href="#" target="_blank">
-                        <img src="images/clients-logo/logo-7.png" alt="">
-                    </a>
-                </div>
-                <div class="client-logo">
-                    <a href="#" target="_blank">
-                        <img src="images/clients-logo/logo-8.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Client Logo ==================-->
-
-    <!-- Start Map
-    ===================================-->
-    <div id="map"></div>
-    <!-- End Map ================-->
 
 </main>
 
@@ -1134,19 +724,17 @@
                 </a>
             </div>
             <ul class="list-inline list-unstyled footer-social-links">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://github.com/valor323" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/chase-caine-2a86b5169/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <!-- <li><a href="#"><i class="fa fa-download"></i></a></li> -->
             </ul>
         </div>
     </div>
-    <div class="footer-bottom">
+    <!-- <div class="footer-bottom">
         <div class="container">
             <p>All Rights Reserved © 2017 <a href="https://mrkayo.com/">Mrkayo</a></p>
         </div>
-    </div>
+    </div> -->
 </footer>
 
 <!-- Start ScrollToTop

@@ -63,6 +63,16 @@ a (standard):	#869cb1 (Gray blue)
 a (hover):	#FFF (White)
 a (active):	#FFF (White)
 ------------------------------------------------------------------*/
+
+.img-orientation{
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: block;
+}
+
 .main-content-color-txt, .kayo-btn-1, .kayo-btn-1:hover, .kayo-btn-1:focus, .kayo-btn-1:active, .main-page-content > section, .control-bar, .slide-menu-container .slide-menu .kayo-user-info .social-media a, .slide-menu-container .slide-menu .kayo-user-info .kayo-links-toggle span, .slide-menu-container .slide-menu.kayo-menu-style-2 .kayo-links a:hover, .slide-menu-container .slide-menu.kayo-menu-style-2 .kayo-links li.active a, .kayo-facts-about-me .kayo-info-list .single-info .info-icon, .kayo-facts-about-me .kayo-info-list .single-info .info-icon i, .testimonials .testi-user-info h3, .testimonials .testi-desc-box i, .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .port-show-info, .kayo-skills .soft-skills .progress-container .progress-val, .normal-post .entry-header .post-category a, .normal-post .entry-header .post-share li a, .normal-post .entry-header .post-share li span, .normal-post .entry-content .entry-post-info h4 a, .normal-post .entry-content .entry-expert .post-readMore a:hover, .normal-post .entry-footer .entry-tags a:hover, .contact-form .kayo-form .form-control {
   color: #FFFFFF;
 }
@@ -296,6 +306,7 @@ body {
 .kayo-icon-box-container {
   padding: 20px;
   position: relative;
+  height: 65%;
 }
 .kayo-icon-box-container .kayo-icon-box {
   -webkit-transform: rotate(45deg);
@@ -767,7 +778,7 @@ body {
 /* 4. Home
 ================================= */
 .home {
-  background: url("../images/work.jpg") center center no-repeat scroll;
+  background: url("../images/glass-apple.jpeg") center center no-repeat scroll;
   background-size: cover;
 }
 .home .intro-section {
@@ -800,8 +811,17 @@ body {
 ================================= */
 /* 5.1 About Introduction */
 .aboutMe .kayo-intro-section {
-  background: url("../images/bg2.jpg") center center no-repeat fixed;
+  background: url("../images/header.jpg") center center no-repeat fixed;
   background-size: cover;
+}
+
+.img-orientation{
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: block;
 }
 
 /* 5.2 My Information */
@@ -839,7 +859,7 @@ body {
 
 /* 5.3 My Service */
 .kayo-service {
-  background: url("../images/bg1.jpg") center center no-repeat fixed;
+  background: url("../images/tech-background-skills.jpg") center center no-repeat fixed;
   background-size: cover;
 }
 .kayo-service .kayo-container {
@@ -849,6 +869,22 @@ body {
 .kayo-service .kayo-icon-list-box {
   margin-bottom: 30px;
 }
+.skills{
+  position: relative;
+  height: 10vh;
+  bottom: 12vh;
+  margin-bottom: 2vh;
+}
+
+.skill_title{
+  position: relative;
+  bottom: 12vh;
+}
+
+.skill-container{
+  margin-bottom: 6vh;
+}
+
 
 /* 5.4 Client */
 .my-clients-logo .kayo-container {
@@ -884,7 +920,7 @@ body {
 
 /* 5.5 Facts About Me */
 .kayo-facts-about-me {
-  background: url("../images/bg3.jpg") center center no-repeat fixed;
+  background: url("../images/apple-background.jpg") center center no-repeat fixed;
   background-size: cover;
 }
 .kayo-facts-about-me .kayo-container {
@@ -893,6 +929,8 @@ body {
 }
 .kayo-facts-about-me .kayo-info-list .single-info {
   margin-bottom: 50px;
+  position: relative;
+  left: 41%;
 }
 .kayo-facts-about-me .kayo-info-list .single-info .info-icon {
   font-size: 35px;
@@ -914,6 +952,8 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   letter-spacing: .7px;
+  position: relative;
+  right: 11%;
 }
 
 /* 5.6 Testimonials */
@@ -1207,6 +1247,7 @@ body {
   -o-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
+  backface-visibility: hidden;
 }
 .port-box .portfolio-items .portfolio-item .port-data > div {
   position: absolute;
@@ -1239,6 +1280,7 @@ body {
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
   padding: 20px;
+  background: rgba(44, 62, 80, 0.96);
 }
 .port-box .portfolio-items .portfolio-item .port-data .port-data-back-card .project-name {
   margin: 0;
@@ -1293,6 +1335,11 @@ body {
   width: 100%;
   height: 100%;
   transform: rotateY(180deg);
+}
+
+.meerkat{
+  height: 293px;
+  width: 360px;
 }
 
 /* 7. Resume
@@ -1532,7 +1579,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: rgba(44, 62, 80, 0.5);
+  /* background: rgba(44, 62, 80, 0.5); */
   top: 0;
   left: 0;
   position: absolute;
@@ -1851,6 +1898,11 @@ body {
   transition: all 0.2s ease-in-out 0s;
 }
 
+.img-meerkat{
+  height: 39.5vh;
+  width: 100%;
+}
+
 /* 9. Contact
 ================================= */
 .contact .kayo-container {
@@ -1874,7 +1926,7 @@ body {
 
 /* 9.3 Contact Form */
 .contact-form {
-  background: url("../images/contact.jpg") center bottom no-repeat fixed;
+  background: url("../images/windows-background.jpg") center bottom no-repeat fixed;
   background-size: cover;
 }
 .contact-form .kayo-container {
@@ -2492,6 +2544,14 @@ body {
     left: -186px;
   }
 
+  .img-orientation{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
   .control-bar .menu-toggle {
     cursor: pointer;
     padding: 8px;
@@ -2563,6 +2623,14 @@ body {
 @media only screen and (max-width: 768px) {
   body {
     overflow-Y: visible;
+  }
+
+  .img-orientation{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 
   .kayo-icon-box-container .kayo-icon-box .kayo-icon {
@@ -2926,6 +2994,15 @@ body {
   .appsLand-navbar.sakura-demo2-mobile-menu-active .app-links .navbar-nav {
     left: 0;
   }
+}
+
+.img-orientation{
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

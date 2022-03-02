@@ -19,10 +19,10 @@ $(function () {
       var re = /\S/;
       return re.test(str)
     }
-    function validatePhone(str) {
-      var re = /^[0-9]*$/;
-      return re.test(str);
-    }
+    // function validatePhone(str) {
+    //   var re = /^[0-9]*$/;
+    //   return re.test(str);
+    // }
     function add_error (errprType) {
       response["Error"] = true;
       if (!response["ErrorType"]) {
@@ -49,13 +49,13 @@ $(function () {
         thisForm.find(".kayoAlert").remove();
         thisForm.addClass("kayo-submiting").find("*").removeClass("kayoErrorInput");
         thisForm.find("[type=submit]").attr('disabled', 'disabled');
-        var full_name     = thisForm.find("[name=full_name]").val(),
+        var name    = thisForm.find("[name=name]").val(),
             email         = thisForm.find("[name=email]").val(),
             message       = thisForm.find("[name=message]").val(),
-            phone         = thisForm.find("[name=phone]").val(),
-            messageAbout  = thisForm.find("[name=messageAbout]").val();
+            // phone         = thisForm.find("[name=phone]").val(),
+            subject = thisForm.find("[name=subject]").val();
 
-        if (!validateEmpty(full_name)) {
+        if (!validateEmpty(name)) {
           add_error("nameValidation")
         }
         if (!validateEmail(email)) {
@@ -64,16 +64,16 @@ $(function () {
         if (!validateEmpty(message)) {
           add_error("messageValidation");
         }
-        if (!validateEmpty(messageAbout)) {
+        if (!validateEmpty(subject)) {
           add_error("messageAboutValidation");
         }
-        if (!validatePhone(phone) || !validateEmpty(phone)) {
-          add_error("phoneValidation");
-        }
+        // if (!validatePhone(phone) || !validateEmpty(phone)) {
+        //   add_error("phoneValidation");
+        // }
         if (jQuery.isEmptyObject(response)) {
           response["Error"] = false;
           response = {};
-          $.post('php/sendMessage.php', thisForm.serialize(),function(result) {
+          $.post('phpMailer/mail_handler.php', thisForm.serialize(),function(result) {
             response = JSON.parse(result);
             append_response();
             thisForm.removeClass("kayo-submiting");
